@@ -6,6 +6,7 @@
 #include "Clever/EventSystem/EventManager.h"
 #include <iostream>
 #include <string>
+#include <filesystem>
 
 namespace World
 {
@@ -79,7 +80,8 @@ namespace World
 			loadedObject = { vulkanInstance->m_Device, vulkanInstance->m_PhysicalDevice, vulkanInstance->m_RenderPass, vulkanInstance->m_CommandPool, vulkanInstance->m_GraphicsQueue, vulkanInstance->m_UniformBuffers, vulkanInstance->m_max_frames_in_flight, false };
 
 			{
-				std::pair<std::vector<Vertex>, std::vector<uint16_t>> teapotModel = loadModel("D:/Clever-Engine/Clever/Clever/Resource/Models/Teapot.obj");
+				std::pair<std::vector<Vertex>, std::vector<uint16_t>> teapotModel = loadModel(RESOURCES + (std::string)"Models/Teapot.Cobj");
+				//std::pair<std::vector<Vertex>, std::vector<uint16_t>> teapotModel = loadModel("D:/Clever-Engine/Clever/Clever/Resources/Models/Teapot.Cobj");
 
 				std::pair<std::vector<Vertex>, std::vector<uint16_t>> rayModel = {vertices, indices };
 

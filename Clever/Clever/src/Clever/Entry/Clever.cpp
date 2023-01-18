@@ -39,7 +39,7 @@ void Clever::init()
     //
     material.reset(new Material::MaterialManager{});
     managerpointers.material = &material;
-    material->MaterialInit({ "Clever/Resource/Materials/stone.json" });
+    material->MaterialInit({ RESOURCES + (std::string)"Materials/stone.json" });
     //!        IE:
     //            File location of material types and material properties, and how they mix together
     //!        Usage:

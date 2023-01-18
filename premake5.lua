@@ -59,6 +59,13 @@ project "Clever"
 		"Clever/vender/vulkan/Lib/vulkan-1.lib"
 	}
 	
+	ABSOLUTE_PATH = path.getabsolute(os.getcwd())
+	
+	defines
+	{
+	'RESOURCES="'..ABSOLUTE_PATH..'/Clever/Clever/Resources/"'
+	}
+	
 	filter "system:windows"
 		
 		staticruntime "On"
