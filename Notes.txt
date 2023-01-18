@@ -1,0 +1,28 @@
+Definitions for objects and handles used, some may be redundant.
+
+Handle: A reference to an abject, It is not the actual Objecet itself just the reference to it.(NOT A POINTER)
+
+GLFWwindow: The handle to the Window GLFW makes
+VkInstance: The compiled copy of Vulkan.
+VkDebugUtilsMessengerEXT:
+VkSurfaceKHR: Abstract window included in Vulkan to any window(Whether GLFW, WINDOWS, or other window creating helpers)
+VkPhysicalDevice: Handle to a GPU
+VkDevice: Handle to CPU
+VkQueue:
+VkSwapchainKHR:Z
+VkImage:
+VkFormat: A enum of types of image or data types. Number of bits per "Pixel"
+VkExtent2D: a width and height
+VkImageView:
+VkFrameBuffer:
+VkRenderPass:
+VkPipelineLayout
+VkPipeline:
+VkCommandPool:
+VkBuffer:
+VkDeviceMemory:
+VkCommandBuffer:
+
+
+Things that are modifiable per object:
+	
