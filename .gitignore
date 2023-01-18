@@ -31,6 +31,7 @@
 .vs/**
 bin/**
 bin-int/**
+x64/**
 
 #Visual Studio Stuff
 *.vcxproj
