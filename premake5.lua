@@ -70,3 +70,11 @@ project "Clever"
 		
 		staticruntime "On"
 		systemversion "latest"
+		
+	filter "configurations:Debug"
+		staticruntime "off"
+		runtime "Debug"
+		
+	filter "configurations:Release"
+		staticruntime "off"
+		runtime "Release"
